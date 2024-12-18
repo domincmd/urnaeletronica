@@ -40,34 +40,38 @@ Esta é a pasta onde os votos, candidatos e números de acesso são guardados em
 
 O arquivo candidates.json guarda os candidatos seguindo a seguinte formatação:
 
-{
+`{
     "NÚMERODOCANDIDATO": "NOMEDOCANDIDATO",
     "NCANDIDATO": "NOMECANDIDATO"
-}
+}`
 
 Lembre-se de colocar uma vírgula depois de todos os itens, a não ser que seja o último da lista. Isso vale para todos os arquivos.
 
 O arquivo numbers.json guarda os números de identificação necessários para entrar na tela de voto seguindo a seguinte formatação:
 
-[
+`[
     NUMERO,
     NUMERO,
     NUMERO,
     NUMERO
-]
+]`
 
 NOTA: Os números não são atualizados. No começo da execução do programa, este simplesmente lê o arquivo e guarda os números temporáriamente, excluindo os já usados. Apos o fim da execução do programa, os números NÃO são atualizados.
 
 O arquivo votes.json apresenta os votos dos candidatos na seguinte formatação:
 
-{
+`{
   "NOMEDOCANDIDATO": QUANTIDADEDEVOTOS,
   "NOMEDOCANDIDATO": QUANTIDADEDEVOTOS
-}
+}`
 
 Note que a quantidade de votos não apresenta vírgulas, pois se trata de um número (um `integer`, para os mais chegados). Não é recomendado colocar vírgulas. Apesar de <b>teoricamente</b> funcionar, não foi testado tão bem.
 
 NOTA: Sempre que o programa conta um voto pela primeira vez, este conta que os votos do candidato são 0, e reescreve os valores do arquivo, então sempre que forem utilizar a urna, tenham cautela em relação a isso. Caso seja necessária uma mudança, contate o programador.
+
+### Arquivo node_modules.zip
+
+Este arquivo contém os módulos do nodejs e PRECISA SER EXTRAIDA PARA O FUNCIONAMENTO DO PROGRAMA.
 
 ## Iniciar o programa
 
@@ -79,15 +83,15 @@ NOTA: PowerShell Não funciona (pelo menos na máquina do criador) por algum mot
 
 Após entrar, digite
 
-node app.js
+`node app.js`
 
 Isso fará o programa funcionar e com sorte uma mensagem assim aparecerá: 
 
-Listening on port: 5000
+`Listening on port: 5000`
 
 Nesse caso, a porta é 5000, então é necessário entrar no seguinte URL por um browser:
 
-localhost:5000
+`localhost:5000`
 
 Isso abrirá o programa.
 

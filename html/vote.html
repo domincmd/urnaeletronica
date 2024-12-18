@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação</title>
+    <link rel="stylesheet" href="/static">
+</head>
+<body>
+    <div class="general-container">
+        
+        <div class="voting-container container">
+            <h2 class="title">Votação</h2>
+            <p>Número do Candidato</p>
+            <input type="number" id="number" name="number">
+            <p class="small">Se você não sabe qual é seu número, chame um assistente.</p>
+            <button class="big-btn" onclick="vote(parseInt(document.getElementById('number').value))">Votar</button>
+            <button class="big-btn" onclick="vote('null')">Votar Nulo</button>
+            <button class="big-btn" onclick="vote('white')">Votar Branco</button>
+        </div>
+    </div>
+</body>
+<script src="/js/vote.js"></script>
+</html>

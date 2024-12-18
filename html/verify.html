@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação</title>
+    <link rel="stylesheet" href="/static">
+</head>
+<body>
+    <div class="general-container">
+        
+        <div class="verification-container container">
+            <h2 class="title">Verificação</h2>
+            <p>Seu Número</p>
+            <input type="number" id="number" name="number">
+            <p class="small">Se você não tem esse número, chame um assistente.</p>
+            <button class="big-btn" onclick="verify(parseInt(document.getElementById('number').value))">Verificar</button>
+        </div>
+    </div>
+</body>
+<script src="/js/verify.js"></script>
+</html>

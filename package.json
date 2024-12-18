@@ -1,0 +1,35 @@
+{
+  "name": "urna",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "pkg -t node16-win-x64 ./app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "pkg": {
+    "assets": [
+      "html/*.html",
+      "static/*.css"
+    ],
+    "scripts": [
+      "files/candidates.json",
+      "files/numbers.json",
+      "files/votes.json",
+      "js/*.js"
+    ],
+    "targets": [
+      "node16-win-x64"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "path": "^0.12.7",
+    "pkg": "^5.8.1"
+  }
+}
